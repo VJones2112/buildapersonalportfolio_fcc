@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: auto;
+    max-width: 700px;
+    background-color: #EA8C55;
+    margin: 0 auto;
+    color: #EA8C55;
+}
+
+#navbar {
+    background-color: #81171B;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    max-width: 700px;
+}
+
+#navbar li {
+    display: inline-block;
+    text-align:right;
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+    
+}
+
+#navbar a {
+    color: #EA8C55;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: white;
+}
+
+h1, h2 {
+    color: #540804;
+    font-family: 'Lemonada', cursive;
+}
+
+#welcome-section {
+    background: url(images/brickpavement.jpg);
+    background-color: sienna;
+    background-blend-mode: multiply;
+    color: #EA8C55;
+    height: 100vh;
+    padding: 1rem;  
+    position: relative;
+    top: 1.6rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcomeDiv {
+
+}
+
+#welcome-section h1 {
+    color: #EA8C55;
+    font-size: 5rem;
+    text-align: center;
+}
+
+#welcome-section p {
+    color: #EA8C55;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#about-me {
+    height: 50vh;
+    background-color: #C75146;
+    line-height: 1.5rem;
+    padding: 1rem;
+    color: #540804;
+    position: relative;
+}
+
+#about-me p {
+    margin-top: 1rem;
+}
+
+p::first-letter {
+    font-size: 1.5rem;
+    
+}
+
+#projects {
+    background-color: #AD2E24;
+    color: #EA8C55;
+    padding: 1rem;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+#projects h2 {
+    color: #EA8C55;
+}
+
+#projects p {
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.project-tile img {
+/*    height: 25vh;*/
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+#contact {
+    line-height: 1.5rem;
+    background-color: #81171B;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+#contact h2 {
+    color: #EA8C55
+}
+
+#contact a {
+    color: #EA8C55;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    background-color: white;
+}
+
+#contact p {
+    color: #EA8C55;
+    margin: 1rem 0;
+}
+
+#contact ul {
+    text-align: center;
+}
+
+#contact li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 2rem;
+    margin-right: 0.5rem;
+}
+
+.fauxFooter {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #EA8C55;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    border-top: 1px solid #EA8C55;
+}
