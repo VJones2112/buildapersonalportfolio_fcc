@@ -11,7 +11,6 @@ html {
 }
 
 body {
-    width: auto;
     max-width: 700px;
     background-color: #EA8C55;
     margin: 0 auto;
@@ -131,6 +130,33 @@ p::first-letter {
     box-shadow: .3rem .6rem .5rem .5rem #661A15;
 }
 
+.projectsFlex { 
+    visibility: hidden; 
+}
+/* Prevents :hover from triggering in the gaps between items */
+
+.projectsFlex > * { 
+    visibility: visible; 
+}
+/* Brings the child items back in, even though the parent is `hidden` */
+
+.projectsFlex  > * { 
+    transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; 
+}
+/* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+
+.projectsFlex:hover > * { 
+    opacity: 0.4; 
+    transform: scale(0.9); 
+}
+/* Fade out all items when the parent is hovered */
+
+.projectsFlex  > *:hover { 
+    opacity: 1; 
+    transform: scale(1); 
+    transition-delay: 0ms, 0ms; 
+}
+
 #contact {
     line-height: 1.5rem;
     background-color: #81171B;
@@ -148,10 +174,6 @@ p::first-letter {
     text-decoration: none;
 }
 
-#contact a:hover {
-    background-color: white;
-}
-
 #contact p {
     color: #EA8C55;
     margin: 1rem 0;
@@ -167,6 +189,14 @@ p::first-letter {
     padding: 0 2rem;
     margin-right: 0.5rem;
 }
+    
+.grow {
+        transition: all .2s ease-in-out;
+}
+.grow:hover {
+        transform: scale(1.5);
+}
+
 
 .fauxFooter {
     text-align: center;
@@ -187,10 +217,18 @@ h6, span {
 
 /*Media query below is for small phone screen.*/
 @media screen and (max-width: 400px) {
-    
 #welcome-section h1 {
         font-size: 3rem;
     } 
+    body, section {
+        max-width: calc(99% - 1rem);
+    }
+    #navbar {
+        max-width: 99%;
+    }
+    #navbar li {
+        padding-right: 1rem;
+    }
 }
 
 /*Media query below is for desktop.*/
@@ -207,12 +245,22 @@ h6, span {
     #navbar {
         width: 100%;
         max-width: 900px;
-        
+
+    }
+    
+    .projectsFlex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .project-tile {
+        width: 50%;
     }
     
     #projects img {
 /*        height: auto;*/
-        width: 60%;
+/*        width: 60%;*/
+        
     }
     
     #welcome-section, #about-me, #projects, #contact {
