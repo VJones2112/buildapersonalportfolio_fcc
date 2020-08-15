@@ -15,7 +15,6 @@ body {
     background-color: #EA8C55;
     margin: 0 auto;
     color: #EA8C55;
-    
 }
 
 #navbar {
@@ -32,7 +31,6 @@ body {
     text-align:right;
     padding: 0.3rem;
     margin-right: 0.5rem;
-    
 }
 
 #navbar a {
@@ -85,13 +83,11 @@ h2 {
 }
 
 #about-me {
-/*    height: 50vh;*/
     background-color: #C75146;
     line-height: 1.5rem;
     padding: 1rem;
     color: #540804;
     position: relative;
-    
 }
 
 #about-me p {
@@ -100,7 +96,6 @@ h2 {
 
 p::first-letter {
     font-size: 1.5rem;
-    
 }
 
 #projects {
@@ -174,6 +169,10 @@ p::first-letter {
     text-decoration: none;
 }
 
+#contact a:hover {
+    text-decoration: underline;
+}
+
 #contact p {
     color: #EA8C55;
     margin: 1rem 0;
@@ -196,7 +195,6 @@ p::first-letter {
 .grow:hover {
         transform: scale(1.5);
 }
-
 
 .fauxFooter {
     text-align: center;
@@ -245,7 +243,6 @@ h6, span {
     #navbar {
         width: 100%;
         max-width: 900px;
-
     }
     
     .projectsFlex {
@@ -257,11 +254,6 @@ h6, span {
         width: 50%;
     }
     
-    #projects img {
-/*        height: auto;*/
-/*        width: 60%;*/
-        
-    }
     
     #welcome-section, #about-me, #projects, #contact {
         padding: 2rem;
