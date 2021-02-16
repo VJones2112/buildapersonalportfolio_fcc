@@ -4,16 +4,15 @@ document.getElementById('date').innerHTML = new Date().toDateString();
 function mouseOver() {
     let x = document.getElementsByClassName('welcomeName');
     let i;
-    for (i = 0; i< x.length; i++) {
-        x[i].style.color='#F6CEB6';
-    }   
+    for (i = 0; i < x.length; i++) {
+        x[i].style.color = '#F6CEB6';
+    }
 }
 
 function mouseOut() {
-   let x = document.getElementsByClassName('welcomeName');
+    let x = document.getElementsByClassName('welcomeName');
     let i;
-    for (i = 0; i< x.length; i++) 
-    {
-        x[i].style.color='#EA8C55';
-}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.color = '#EA8C55';
+    }
 }

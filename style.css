@@ -1,16 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap');
 
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
+} */
 
 html {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
 }
 
-body {
+nav, section, footer {
+    /* width: 95%; */
+}
+
+
+img {
+    width: 400px;
+}
+nav, #welcomeDiv, #about-me, .projectsFlex, footer, #contact{
+    /* text-align: center; */
+}
+#about-me, .projectsFlex, .social-list  {
+    /* margin: auto; */
+}
+#initLogo {
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: -.7rem;
+    margin-left: .25rem;
+    
+}
+/* .fauxFooter {
+    border: 1px solid green;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Going to restart css using BS */
+/* body {
     max-width: 700px;
     background-color: #EA8C55;
     margin: 0 auto;
@@ -36,10 +80,11 @@ body {
 #navbar a {
     color: #EA8C55;
     text-decoration: none;
+    transition: color 0.7s;
 }
 
 #navbar a:hover {
-    background-color: white;
+    color: #F6CEB6;
 }
 
 h1, h2 {
@@ -49,7 +94,8 @@ h1, h2 {
 
 #welcome-section {
     background: url(images/brickpavement.jpg);
-    background-color: sienna;
+    background-attachment: fixed;
+    background-color: #a0522d;
     background-blend-mode: multiply;
     color: #EA8C55;
     height: 100vh;
@@ -81,12 +127,12 @@ section {
 h2 {
     text-align: center;
 }
-
+#about-me h2 { color:#F6CEB6; }
 #about-me {
-    background-color: #C75146;
-    line-height: 1.5rem;
+    background-color: #81171B/*#C75146*/;
+    /* line-height: 1.5rem;
     padding: 1rem;
-    color: #540804;
+    color: #F6CEB6/*#540804*/;/*
     position: relative;
 }
 
@@ -99,7 +145,12 @@ p::first-letter {
 }
 
 #projects {
-    background-color: #AD2E24;
+    
+    /* background-color: #AD2E24; *//*
+    background: url(images/brickpavement.jpg);
+    background-attachment: fixed;
+    background-color: #a0522d;
+    background-blend-mode: multiply;
     color: #EA8C55;
     padding: 1rem;
     line-height: 1.5rem;
@@ -129,43 +180,49 @@ p::first-letter {
     visibility: hidden; 
 }
 /* Prevents :hover from triggering in the gaps between items */
-
+/*
 .projectsFlex > * { 
     visibility: visible; 
 }
 /* Brings the child items back in, even though the parent is `hidden` */
-
+/*
 .projectsFlex  > * { 
-    transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; 
+    transition: opacity 150ms linear 100ms, transform 200ms ease-in-out 200ms; 
 }
 /* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
-
+/*
 .projectsFlex:hover > * { 
     opacity: 0.4; 
     transform: scale(0.9); 
 }
 /* Fade out all items when the parent is hovered */
-
+/*
 .projectsFlex  > *:hover { 
     opacity: 1; 
     transform: scale(1); 
     transition-delay: 0ms, 0ms; 
 }
 
+.orange:hover { 
+    color: black;
+    background-color: white; /* only this works...*/
+    /* text-decoration: underline; *//*
+} /* Not working */
+/*
 #contact {
     line-height: 1.5rem;
     background-color: #81171B;
-    color: white;
+    color: #F6CEB6;
     padding: 1rem;
     position: relative;
 }
 
 #contact h2 {
-    color: #EA8C55
+    color: #F6CEB6;
 }
 
 #contact a {
-    color: #EA8C55;
+    color: #F6CEB6;
     text-decoration: none;
 }
 
@@ -174,12 +231,13 @@ p::first-letter {
 }
 
 #contact p {
-    color: #EA8C55;
+    color: #F6CEB6;
     margin: 1rem 0;
 }
 
 #contact ul {
     text-align: center;
+    
 }
 
 #contact li {
@@ -187,6 +245,7 @@ p::first-letter {
     display: inline;
     padding: 0 2rem;
     margin-right: 0.5rem;
+    color: #F6CEB6;
 }
     
 .grow {
@@ -199,21 +258,22 @@ p::first-letter {
 .fauxFooter {
     text-align: center;
     font-size: 0.7rem;
-    color: #EA8C55;
+    color: #F6CEB6;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin-top: 1.5rem;
-    border-top: 1px solid #EA8C55;
+    border-top: 1px solid #F6CEB6;;
 }
+
 
 h6, span {
     text-align: center;
     font-size: 0.7rem;
-    color: #EA8C55;
+    color: #F6CEB6;;
     font-weight: 400;
 }
 
-/*Media query below is for small phone screen.*/
+/*Media query below is for small phone screen.*//*
 @media screen and (max-width: 400px) {
 #welcome-section h1 {
         font-size: 3rem;
@@ -229,7 +289,7 @@ h6, span {
     }
 }
 
-/*Media query below is for desktop.*/
+/*Media query below is for desktop.*//*
 @media screen and (min-width: 1000px) {
     html {
         font-size: larger;
@@ -259,4 +319,4 @@ h6, span {
         padding: 2rem;
     }
     
-}
+} */ 
